@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +42,8 @@ INSTALLED_APPS = [
     
     #App
     "account",
-    "shop"
+    "shop",
+    "cart"
 ]
 
 MIDDLEWARE = [
@@ -108,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-fr'
 
 TIME_ZONE = 'UTC'
 
@@ -125,7 +127,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-AUTH_MODEL_USER = "account.Account"
+AUTH_USER_MODEL = "account.Account"
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
